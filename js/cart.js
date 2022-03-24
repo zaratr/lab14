@@ -18,14 +18,22 @@ function renderCart() {
   showCart();
 }
 
-// TODO: Remove all of the rows (tr) in the cart table (tbody)
+// DONE: Remove all of the rows (tr) in the cart table (tbody)
 function clearCart() {
   let allRows = document.querySelectorAll('#cart tbody tr');
-  allRows
+
+  for(let allRows of allRows)
+  {
+    if(allRows)
+    i.remove();
+  }
+
+  return;
 }
 
 // TODO: Fill in the <tr>'s under the <tbody> for each item in the cart
-function showCart() {
+function showCart() 
+{
 
   // TODO: Find the table body
 
